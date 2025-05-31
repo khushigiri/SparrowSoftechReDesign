@@ -242,7 +242,7 @@ header, .top-bar, .outter_nav_div, .navbar, .nav-container {
   margin-top: 20px;
   position: fixed;
   left: 89%;
-  top: 7.5%;
+  top: 4.5%;
 }
 
 .language_div a {
@@ -1113,6 +1113,14 @@ input[type="radio"] {
     top: 0;
     left: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .language_div {
+    transition: top 0.5s ease-in-out;
+  }
+
+  .language_div.scrolled {
+    top: 2.5%;
   }
 
 }

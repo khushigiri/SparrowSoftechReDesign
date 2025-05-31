@@ -23,3 +23,13 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('scroll', handleScroll);
   handleScroll();
 });
+
+window.addEventListener("scroll", function () {
+  const langDiv = document.querySelector(".language_div");
+
+  if (window.scrollY > 100) { // Trigger scroll threshold
+    langDiv.classList.add("scrolled");
+  } else {
+    langDiv.classList.remove("scrolled");
+  }
+});
